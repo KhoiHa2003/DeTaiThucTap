@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_blank_cau_hinh"
+    android:layout_height="match_parent"
+    tools:context=".CauhinhFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Cấu hình"
+                android:id="@+id/tvCauHinh"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:padding="20dp">
+
+            </TextView>
+            <ImageButton
+                android:id="@+id/imgBtnThongBao"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:src="@drawable/baseline_notifications_24" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="18dp"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:id="@+id/imgBtnQuanLyNguoiGui"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_edit_square_24"
+                android:layout_height="28dp">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="200dp"
+                android:id="@+id/tvQuanLyNguoiGui"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imgBtnQuanLyNguoiGui"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:text="Quản lý người gửi">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toRightOf="@+id/tvQuanLyNguoiGui"
+                android:background="@null"
+                android:src="@drawable/baseline_chevron_right_24">
+
+            </ImageButton>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="18dp"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:id="@+id/imgBtnQuanLyNguoiNhan"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_edit_square_24"
+                android:layout_height="28dp">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="200dp"
+                android:id="@+id/tvQuanLyNguoiNhan"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imgBtnQuanLyNguoiNhan"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:text="Quản lý người nhận">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toRightOf="@+id/tvQuanLyNguoiNhan"
+                android:background="@null"
+                android:src="@drawable/baseline_chevron_right_24">
+
+            </ImageButton>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="18dp"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:id="@+id/imgBtnQuanLyHangHoa"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_edit_square_24"
+                android:layout_height="28dp">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="200dp"
+                android:id="@+id/tvQuanLyHangHoa"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imgBtnQuanLyHangHoa"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:text="Quản lý hàng hóa">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toRightOf="@+id/tvQuanLyHangHoa"
+                android:background="@null"
+                android:src="@drawable/baseline_chevron_right_24">
+
+            </ImageButton>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="18dp"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:id="@+id/imgBtnQuanLyTaiKhoanLenDonHo"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_edit_square_24"
+                android:layout_height="28dp">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="250dp"
+                android:id="@+id/tvQuanLyTaiKhoanLenDonHo"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imgBtnQuanLyTaiKhoanLenDonHo"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:text="Quản lý tài khoản lên đơn hộ">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toRightOf="@+id/tvQuanLyTaiKhoanLenDonHo"
+                android:background="@null"
+                android:src="@drawable/baseline_chevron_right_24">
+
+            </ImageButton>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="18dp"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:id="@+id/imgBtnCaiDat"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_edit_square_24"
+                android:layout_height="28dp">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="200dp"
+                android:id="@+id/tvCaiDatHienThiDonHang"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imgBtnCaiDat"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:text="Cài đặt hiển thị đơn hàng">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toRightOf="@+id/tvCaiDatHienThiDonHang"
+                android:background="@null"
+                android:src="@drawable/baseline_chevron_right_24">
+
+            </ImageButton>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

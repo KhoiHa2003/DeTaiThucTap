@@ -1,0 +1,408 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonHangFragment">
+
+    <!-- Thanh người dùng -->
+    <LinearLayout
+        android:id="@+id/layoutUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroud"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                android:src="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xin chào"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hà Minh Khôi"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgBtnThongBao"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/baseline_notifications_24" />
+    </LinearLayout>
+
+    <!-- Nội dung chính -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_below="@id/layoutUser">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_my_vietnam_post2"
+                android:layout_marginBottom="5dp" />
+
+            <!-- chức năng -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/layoutTaoDon"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@null"
+                            android:src="@drawable/baseline_assignment_add_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Tạo đơn"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Quản lý đơn -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/layoutDonHangGui"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@null"
+                            android:src="@drawable/baseline_inventory_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Quản lý đơn hàng gửi"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Chức năng khác">
+            </TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+                <!-- First Row: Statistics Section -->
+                <LinearLayout
+                    android:id="@+id/layoutThongKeSanLuong"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="40dp"
+                        android:backgroundTint="@color/xam">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/thongkesanluong"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:scaleType="fitXY"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/ThongKe"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Thống kê sản lượng"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/layoutThongKeSanLuong"/>
+                </LinearLayout>
+
+                <!-- Second Row: Order Management Section -->
+                <LinearLayout
+                    android:id="@+id/layoutDonHangNhan"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/layoutThongKeSanLuong"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="40dp"
+                        android:backgroundTint="@color/xanh">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/quanlydonhangnhan"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:scaleType="fitXY"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tvDonHangNhan"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="Quản lý đơn hàng nhận"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/layoutDonHangNhan"/>
+                </LinearLayout>
+
+                <!-- Third Row: Order Draft Management Section -->
+                <LinearLayout
+                    android:id="@+id/layoutDonHangGuiNhap"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/layoutDonHangNhan"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="40dp"
+                        android:backgroundTint="@color/cam">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/donhangguinhap"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:scaleType="fitXY"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tvDonHangGuiNhap"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Đơn hàng gửi nháp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/layoutDonHangGuiNhap"/>
+                </LinearLayout>
+
+                <!-- Fourth Row: Payment History Section -->
+                <LinearLayout
+                    android:id="@+id/layoutLichSuChiTra"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/layoutDonHangGuiNhap"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="40dp"
+                        android:backgroundTint="@color/cam">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/lichsuchitra"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:scaleType="fitXY"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tvLichSuChiTra"
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:text="Thống kê lịch sử chi trả"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/layoutLichSuChiTra"/>
+                </LinearLayout>
+
+                <!-- Second Row: Order Management Section -->
+                <LinearLayout
+                    android:id="@+id/layoutTaoLoHang"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutLichSuChiTra"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="40dp"
+                        android:backgroundTint="@color/xam">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imgBtnTaoLoHang"
+                            android:layout_gravity="center"
+                            android:src="@drawable/taolohang"
+                            android:background="@null"
+                            android:scaleType="fitXY"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tvTaoLoHang"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="Tạo lô hàng"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/layoutTaoLoHang"/>
+                </LinearLayout>
+
+                <!-- Third Row: Create Multiple Orders Section -->
+                <LinearLayout
+                    android:id="@+id/layoutTaoNhieuLoHang"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/layoutTaoLoHang"
+                    app:layout_constraintTop_toBottomOf="@id/layoutLichSuChiTra"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="40dp"
+                        android:backgroundTint="@color/xanh">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imgBtnTaoNhieuLoHang"
+                            android:layout_gravity="center"
+                            android:src="@drawable/taonhieulohang"
+                            android:background="@null"
+                            android:scaleType="fitXY"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tvTaoNhieuLoHang"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="Tạo nhiều lô hàng"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/layoutTaoNhieuLoHang"/>
+                </LinearLayout>
+
+                <!-- Fourth Row: Query Section -->
+                <LinearLayout
+                    android:id="@+id/layoutTraCuu"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/layoutTaoNhieuLoHang"
+                    app:layout_constraintTop_toBottomOf="@id/layoutLichSuChiTra"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="40dp"
+                        android:backgroundTint="@color/cam">
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imgBtnTraCuu"
+                            android:layout_gravity="center"
+                            android:src="@drawable/tracuykien"
+                            android:background="@null"
+                            android:scaleType="fitXY"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tvTraCuu"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Tra cứu ý kiến xử lý phát"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/layoutTraCuu"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
